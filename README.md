@@ -1,66 +1,77 @@
-# VectorDB
-**A Streamlit application for document processing, vector embeddings visualization, and similarity search using FAISS vector database.
-Features
+# 🔍 VectorDB Demo
 
-Document Processing
+A Streamlit application for document processing, vector embeddings visualization, and similarity search using FAISS vector database.
 
-PDF file upload and text extraction
-Text input processing
-Automatic text chunking with customizable parameters
+## Features
 
+- **Document Processing**
+  - PDF file upload and text extraction
+  - Text input processing
+  - Automatic text chunking with customizable parameters
 
-Vector Database Operations
+- **Vector Database Operations**
+  - Document embedding using HuggingFace's all-MiniLM-L6-v2 model
+  - FAISS vector store integration
+  - Similarity search with configurable results
 
-Document embedding using HuggingFace's all-MiniLM-L6-v2 model
-FAISS vector store integration
-Similarity search with configurable results
+- **Visualization & Analysis**
+  - 2D PCA visualization of document vectors
+  - Vector statistics and component analysis
+  - Nearest neighbor analysis with distance metrics
+  - Interactive data exploration
 
+## Installation
 
-Visualization & Analysis
-
-2D PCA visualization of document vectors
-Vector statistics and component analysis
-Nearest neighbor analysis with distance metrics
-Interactive data exploration
-
-
-
-Installation
-
-Clone the repository:
-
-bashCopygit clone https://github.com/yourusername/vectordb-demo.git
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/vectordb-demo.git
 cd vectordb-demo
+```
 
-Create a virtual environment (recommended):
-
-bashCopypython -m venv venv
+2. Create a virtual environment (recommended):
+```bash
+python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-Install the required packages:
+3. Install the required packages:
+```bash
+pip install -r requirements.txt
+```
 
-bashCopypip install -r requirements.txt
-Usage
+## Usage
 
-Start the Streamlit application:
+1. Start the Streamlit application:
+```bash
+streamlit run app.py
+```
 
-bashCopystreamlit run app.py
+2. Navigate to the application in your web browser (typically http://localhost:8501)
 
-Navigate to the application in your web browser (typically http://localhost:8501)
-Use the sidebar to switch between different functionalities:
+3. Use the sidebar to switch between different functionalities:
+   - Add Documents: Upload PDFs or enter text
+   - Query Database: Search for similar documents
+   - View Contents: Explore database contents and visualizations
 
-Add Documents: Upload PDFs or enter text
-Query Database: Search for similar documents
-View Contents: Explore database contents and visualizations
+## Project Structure
 
-
-
-Project Structure
-Copyvectordb-demo/
+```
+vectordb-demo/
 ├── app.py              # Main Streamlit application
 ├── requirements.txt    # Python dependencies
 ├── static/
 │   └── style.css      # Custom CSS styling
 └── README.md          # Project documentation
-Dependencies
-See requirements.txt for a complete list of dependencies.**
+```
+
+## Dependencies
+
+See `requirements.txt` for a complete list of dependencies.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
